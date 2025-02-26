@@ -50,13 +50,14 @@ body {
 }
 
 nav {
+    width: 100%;
     height: 150px;
 
     background-color: var(--accent-1);
 }
 
-.header {
-    padding-top: 24px;
+.header-title {
+    padding-top: 16px;
 
     font-family: var(--font-1);
     font-size: var(--text-headline);
@@ -74,8 +75,9 @@ nav {
 .title {
     padding: 28px 0;
 
-    font-family: var(--font-1);
-    font-size: var(--text-title);
+    font-family: var(--font-2);
+    font-size: var(--text-headline);
+    font-weight: 800;
     text-align: center;
 }
 
@@ -137,5 +139,75 @@ nav {
 
     color: var(--secondary-2);
 
-    scale: 1.1;
+    scale: 1.2;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        justify-content: center;
+        align-items: center;
+
+        width: 800px;
+        height: auto;
+
+        margin: 0 110px;
+    }
+
+    .header-title {
+        padding-top: 44px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        justify-content: center;
+        align-items: center;
+
+        width: 900px;
+        height: auto;
+
+        margin: 0 160px;
+        gap: 20px;
+    }
+
+    .header-title {
+        padding-top: 44px;
+    }
+
+    .timer-cards {
+        margin: 20px 0 20px 16px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        justify-content: center;
+        align-items: center;
+
+        width: 900px;
+        height: auto;
+
+        margin: 0 550px;
+        gap: 20px;
+    }
+
+    .header-title {
+        padding-top: 44px;
+    }
+
+    .timer-cards {
+        margin: 20px 0 20px 16px;
+    }
 }
