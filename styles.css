@@ -87,7 +87,7 @@ nav {
     align-items: center;
 
     margin: 16px;
-    border: var(--primary-1) 2px solid;
+    border: var(--primary-1) 4px solid;
     border-radius: 8px;
 
     -webkit-box-shadow: 3px 3px 10px 0 #fbfbfe;
