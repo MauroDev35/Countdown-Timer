@@ -89,8 +89,8 @@ nav {
     border-radius: 8px;
 
     -webkit-box-shadow: 3px 3px 10px 0 #fbfbfe;
--moz-box-shadow: 3px 3px 10px 0 #fbfbfe;
-box-shadow: 3px 3px 10px 0 #fbfbfe;
+    -moz-box-shadow: 3px 3px 10px 0 #fbfbfe;
+    box-shadow: 3px 3px 10px 0 #fbfbfe;
 
     width: 340px;
     height: 650px;
@@ -128,4 +128,10 @@ box-shadow: 3px 3px 10px 0 #fbfbfe;
     font-weight: 600;
     text-align: center;
     color: var(--primary-1);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-1);
+
+    color: var(--secondary-2);
 }
