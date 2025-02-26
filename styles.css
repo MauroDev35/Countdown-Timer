@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+html {
+    /* Escala tipografica */
+    font-size: 62.5%;
+
+    /* Familias tipograficas */
+    --font-1: "Shrikhand", serif;
+    --font-2: "Nunito Sans", serif;
+
+    /* Variables tipograficas */
+    --text-caption: 1.2rem;
+    --text-note: 1.4rem;
+    --text-base: 1.8rem;
+    --text-subheader: 2rem;
+    --text-title: 2.8rem;
+    --text-headline: 4.2rem;
+    --text-double: 4.8rem;
+    --text-display: 8.8rem;
+    --text-jumbo: 14rem;
+
+    /* Colores */
+    --primary-1:#5b2f15;
+
+    --secondary-1:#e5bf90;
+    --secondary-2:#efd7ba;
+    
+    --accent-1:#ea9913;
+
+    /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+body {
+    background-color: var(--secondary-2);
+
+    font-size: var(--text-base);
+    font-family: var(--font-2);
+    color: var(--primary-1);
+}
+
+nav {
+    height: 150px;
+
+    background-color: var(--accent-1);
+}
+
+.header {
+    padding-top: 24px;
+
+    font-family: var(--font-1);
+    font-size: var(--text-headline);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 390px;
+}
+
+.title {
+    padding: 28px 0;
+
+    font-family: var(--font-1);
+    font-size: var(--text-title);
+    text-align: center;
+}
+
+.timer-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 32px 16px 0 16px;
+    border: var(--primary-1) 2px solid;
+    border-radius: 8px;
+
+    -webkit-box-shadow: 3px 3px 10px 0 #fbfbfe;
+-moz-box-shadow: 3px 3px 10px 0 #fbfbfe;
+box-shadow: 3px 3px 10px 0 #fbfbfe;
+
+    width: 340px;
+    height: 650px;
+
+    background-color: var(--secondary-1);
+}
+
+.img {
+    padding-top: 24px;
+}
+
+.subtitle {
+    font-family: var(--font-1);
+    font-size: var(--text-title);
+    text-align: center;
+}
+
+.text {
+    font-size: var(--text-display);
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn-primary {
+    width: 120px;
+    height: 40px;
+
+    background-color: var(--accent-1);
+
+    border: var(--primary-1) 2px solid;
+    border-radius: 4px;
+
+    font-family: var(--font-2);
+    font-size: var(--text-title);
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-1);
+}
